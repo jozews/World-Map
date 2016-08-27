@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A62660C28314297BFD340A18 /* Pods_World_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1099C41D3413876D325B28F1 /* Pods_World_Map.framework */; };
 		EB2E98FC1D70F435008F785A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2E98FB1D70F435008F785A /* AppDelegate.swift */; };
 		EB2E98FE1D70F435008F785A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2E98FD1D70F435008F785A /* ViewController.swift */; };
 		EB2E99011D70F435008F785A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2E98FF1D70F435008F785A /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		EB2E99061D70F436008F785A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2E99041D70F436008F785A /* LaunchScreen.storyboard */; };
 		EB2E99111D70F436008F785A /* World_MapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2E99101D70F436008F785A /* World_MapTests.swift */; };
 		EB2E991C1D70F436008F785A /* World_MapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2E991B1D70F436008F785A /* World_MapUITests.swift */; };
+		EB2E992A1D70F48E008F785A /* countries_small.geojson in Resources */ = {isa = PBXBuildFile; fileRef = EB2E99291D70F48E008F785A /* countries_small.geojson */; };
+		EB2E992C1D70FA42008F785A /* WorldMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2E992B1D70FA42008F785A /* WorldMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1099C41D3413876D325B28F1 /* Pods_World_Map.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_World_Map.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		163D0C4FC66A7E3CCCDFF739 /* Pods-World Map.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-World Map.debug.xcconfig"; path = "Pods/Target Support Files/Pods-World Map/Pods-World Map.debug.xcconfig"; sourceTree = "<group>"; };
+		DBB23BC9608F402B7DCF8E6E /* Pods-World Map.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-World Map.release.xcconfig"; path = "Pods/Target Support Files/Pods-World Map/Pods-World Map.release.xcconfig"; sourceTree = "<group>"; };
 		EB2E98F81D70F435008F785A /* World Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "World Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2E98FB1D70F435008F785A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB2E98FD1D70F435008F785A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,8 @@
 		EB2E99171D70F436008F785A /* World MapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "World MapUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2E991B1D70F436008F785A /* World_MapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World_MapUITests.swift; sourceTree = "<group>"; };
 		EB2E991D1D70F436008F785A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB2E99291D70F48E008F785A /* countries_small.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = countries_small.geojson; sourceTree = "<group>"; };
+		EB2E992B1D70FA42008F785A /* WorldMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A62660C28314297BFD340A18 /* Pods_World_Map.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		815B35ADDD622429A577B2B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				163D0C4FC66A7E3CCCDFF739 /* Pods-World Map.debug.xcconfig */,
+				DBB23BC9608F402B7DCF8E6E /* Pods-World Map.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D0761075C790C59C5E912340 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1099C41D3413876D325B28F1 /* Pods_World_Map.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EB2E98EF1D70F435008F785A = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +107,8 @@
 				EB2E990F1D70F436008F785A /* World MapTests */,
 				EB2E991A1D70F436008F785A /* World MapUITests */,
 				EB2E98F91D70F435008F785A /* Products */,
+				815B35ADDD622429A577B2B4 /* Pods */,
+				D0761075C790C59C5E912340 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +127,12 @@
 			children = (
 				EB2E98FB1D70F435008F785A /* AppDelegate.swift */,
 				EB2E98FD1D70F435008F785A /* ViewController.swift */,
+				EB2E992B1D70FA42008F785A /* WorldMapView.swift */,
 				EB2E98FF1D70F435008F785A /* Main.storyboard */,
 				EB2E99021D70F436008F785A /* Assets.xcassets */,
 				EB2E99041D70F436008F785A /* LaunchScreen.storyboard */,
 				EB2E99071D70F436008F785A /* Info.plist */,
+				EB2E99291D70F48E008F785A /* countries_small.geojson */,
 			);
 			path = "World Map";
 			sourceTree = "<group>";
@@ -132,9 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB2E99201D70F436008F785A /* Build configuration list for PBXNativeTarget "World Map" */;
 			buildPhases = (
+				9E083737F52BEA3128E63F34 /* Check Pods Manifest.lock */,
 				EB2E98F41D70F435008F785A /* Sources */,
 				EB2E98F51D70F435008F785A /* Frameworks */,
 				EB2E98F61D70F435008F785A /* Resources */,
+				D9CFE691DA399FF41C701E7E /* Embed Pods Frameworks */,
+				62121B0227E9E8F516AE683C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +267,7 @@
 			files = (
 				EB2E99061D70F436008F785A /* LaunchScreen.storyboard in Resources */,
 				EB2E99031D70F436008F785A /* Assets.xcassets in Resources */,
+				EB2E992A1D70F48E008F785A /* countries_small.geojson in Resources */,
 				EB2E99011D70F435008F785A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,11 +288,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		62121B0227E9E8F516AE683C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-World Map/Pods-World Map-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E083737F52BEA3128E63F34 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D9CFE691DA399FF41C701E7E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-World Map/Pods-World Map-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EB2E98F41D70F435008F785A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB2E992C1D70FA42008F785A /* WorldMapView.swift in Sources */,
 				EB2E98FE1D70F435008F785A /* ViewController.swift in Sources */,
 				EB2E98FC1D70F435008F785A /* AppDelegate.swift in Sources */,
 			);
@@ -402,6 +485,7 @@
 		};
 		EB2E99211D70F436008F785A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 163D0C4FC66A7E3CCCDFF739 /* Pods-World Map.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "World Map/Info.plist";
@@ -413,6 +497,7 @@
 		};
 		EB2E99221D70F436008F785A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBB23BC9608F402B7DCF8E6E /* Pods-World Map.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "World Map/Info.plist";
@@ -487,6 +572,7 @@
 				EB2E99221D70F436008F785A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB2E99231D70F436008F785A /* Build configuration list for PBXNativeTarget "World MapTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +581,7 @@
 				EB2E99251D70F436008F785A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB2E99261D70F436008F785A /* Build configuration list for PBXNativeTarget "World MapUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +590,7 @@
 				EB2E99281D70F436008F785A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
